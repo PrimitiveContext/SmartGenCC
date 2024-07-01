@@ -1,7 +1,7 @@
 # SmartGenCCs
 # Overview
 # The CCs_from_BINs.py script is designed to generate valid credit card numbers based on provided BIN (Bank Identification Number) values. The script can process individual BINs or a list of BINs from a file and outputs the generated card numbers to CSV files. It ensures the generated numbers are valid by using the Luhn algorithm.
-#
+\n
 # --Features--
 #	Generates valid credit card numbers using the Luhn algorithm.
 #	Processes both single BIN values and lists of BIN values from text or CSV files.
