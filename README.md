@@ -24,11 +24,8 @@ To run the script, use the following command format:
     Maximum number of credit card numbers per CSV file (default is 100,000).
 
 --Examples--
-    # Generate credit card numbers for a single BIN value with the default batch size
-    python CCs_from_BINs.py 423456**********
-
-    # Generate credit card numbers for multiple BIN values from a file with a specified batch size
-    python CCs_from_BINs.py bin_values.txt --batch 50000
+    python CCs_from_BINs.py 423456**********     # Generate credit card numbers for a single BIN value with the default batch size
+    python CCs_from_BINs.py bin_values.txt --batch 50000     # Generate credit card numbers for multiple BIN values from a file with a specified batch size
 
 --BIN_cc_collision_odds.csv--
     Contains data on credit card BINs (Bank Identification Numbers) and their associated odds of credit card number collisions.
