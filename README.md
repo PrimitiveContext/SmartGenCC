@@ -40,7 +40,7 @@ To run the script, use the following command format:
 
 The `BinStats.csv` contains data on BINs of specific cards and estimated odds of a card number collision.
 ```
-| cc_brand        | cc_name                                                        | odds_of_collision | luhn_card_space | global_est | bin_list                                 |
+| cc_brand        | cc_name                                                        | odds_of_collision | luhn_cc_space | est_active_global_est | bin_list                                 |
 |-----------------|----------------------------------------------------------------|-------------------|-----------------|------------|------------------------------------------|
 | American Express| American Express American Express Blue Cash Express Card       | 0.04              | 100000000       | 4000000    | ['372395*********']                      |
 | Visa            | VISA Bank of America, National Association Classic, Debit, Visa| 0.025             | 1000000000      | 25000000   | ['449533**********']                     |
