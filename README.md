@@ -48,7 +48,7 @@ The `BinStats.csv` contains data on BINs of specific cards and estimated odds of
 The `RegexWildcards.json` contains bin wildcard lists and cc regex for specific subsets of Discover, AMEX, VISA, and Master Card.
 ```
 {      
-        "type": "VISA",<br/>
+        "type": "VISA",
         "cc_regex": "^4[0-9]{12}(?:[0-9]{3})?$|^4[0-9]{12}(?:[0-9]{3})?$",
         "cc_length": 16,
         "code_regex": "^\\d{3}$",
