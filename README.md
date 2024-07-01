@@ -1,8 +1,8 @@
 
-# CCs_from_BINs.py
+# SmartGenCCs.py
 
 ## Overview
-The `CCs_from_BINs.py` script is designed to generate valid credit card numbers based on provided BIN (Bank Identification Number) values. The script can process individual BINs or a list of BINs from a file and outputs the generated card numbers to CSV files. It ensures the generated numbers are valid by using the Luhn algorithm.
+The `SmartGenCCs.py` script is designed to generate valid credit card numbers based on provided BIN (Bank Identification Number) values. The script can process individual BINs or a list of BINs from a file and outputs the generated card numbers to CSV files. It ensures the generated numbers are valid by using the Luhn algorithm.
 
 The `BIN_cc_collision_odds.csv` spreadsheet contains data on BINs of specific cards and estimated odds of a card number collision.
 - Columns: `cc_brand | cc_name | cc_odds_of_collision | total_luhn_cc_numbers | cc_est_global_active | bin_list`
