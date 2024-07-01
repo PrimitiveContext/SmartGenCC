@@ -10,8 +10,8 @@
 #	Handles both 15-digit and 16-digit BIN values.
 
 # --Usage--
-To run the script, use the following command format:br /
-  \npython3 CCs_from_BINs.py <bin_value_or_file> [--batch <batch_size>]br /
+To run the script, use the following command format:br/
+  \npython3 CCs_from_BINs.py <bin_value_or_file> [--batch <batch_size>]br/
   <bin_value_or_file> (required)< br / >
     The BIN value or the path to a file containing BIN values. The BIN value should contain asterisks (*) representing the variable digits.
 #			Example: '372395*********' (American Express: 15 digits total)
