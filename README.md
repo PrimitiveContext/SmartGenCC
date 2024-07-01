@@ -4,6 +4,9 @@
 ## Overview
 The `CCs_from_BINs.py` script is designed to generate valid credit card numbers based on provided BIN (Bank Identification Number) values. The script can process individual BINs or a list of BINs from a file and outputs the generated card numbers to CSV files. It ensures the generated numbers are valid by using the Luhn algorithm.
 
+The `BIN_cc_collision_odds.csv` spreadsheet contains data on BINs of specific cards and estimated odds of a card number collision.
+- Columns: `cc_brand | cc_name | cc_odds_of_collision | total_luhn_cc_numbers | cc_est_global_active | bin_list`
+
 ## Features
 - Generates valid credit card numbers using the Luhn algorithm.
 - Processes both single BIN values and lists of BIN values from text or CSV files.
@@ -35,12 +38,3 @@ To run the script, use the following command format:
   ```sh
   python CCs_from_BINs.py bin_values.txt --batch 50000
   ```
-
-## BIN_cc_collision_odds.csv
-Contains data on credit card BINs (Bank Identification Numbers) and their associated odds of credit card number collisions.
-- `cc_brand`: The brand of the card (e.g., American Express, Visa, MasterCard).
-- `cc_name`: The name of the credit card or the issuing bank (e.g., American Express American Express Blue Cash Everyday).
-- `cc_odds_of_collision`: The calculated odds of a credit card number collision for the BIN (e.g., 0.040).
-- `total_luhn_cc_numbers`: The total number of potential credit card numbers conforming to the Luhn algorithm for the BIN (e.g., 100000000).
-- `cc_est_global_active`: An estimate of the active cards associated with the BIN (e.g., 4000000).
-- `bin_list`: A list of BINs represented with masked digits (e.g., ['372395*********']).
