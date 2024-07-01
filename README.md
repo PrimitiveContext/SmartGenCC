@@ -4,8 +4,22 @@
 ## Overview
 The `SmartGenCCs.py` script is designed to generate valid credit card numbers based on provided BIN (Bank Identification Number) values. The script can process individual BINs or a list of BINs from a file and outputs the generated card numbers to CSV files. It ensures the generated numbers are valid by using the Luhn algorithm.
 
-The `BIN_cc_collision_odds.csv` spreadsheet contains data on BINs of specific cards and estimated odds of a card number collision.
+The `BinStats.csv` contains data on BINs of specific cards and estimated odds of a card number collision.
 - Columns: `cc_brand | cc_name | cc_odds_of_collision | total_luhn_cc_numbers | cc_est_global_active | bin_list`
+
+The `RegexWildcards.json` contains bin wildcard lists and cc regex for specific subsets of Discover, AMEX, VISA, and Master Card.
+`        "type": "VISA",
+        "cc_regex": "^4[0-9]{12}(?:[0-9]{3})?$|^4[0-9]{12}(?:[0-9]{3})?$",
+        "cc_length": 16,
+        "code_regex": "^\\d{3}$",
+        "date_format": "MM/YY",
+        "card_space": "10,000,000,000",
+        "wildcards": 10000,
+        "wildcard_list": [
+            "4012040120******",
+            "4012040121******",
+            "4012040122******",
+            "4012040123******"]`
 
 ## Features
 - Generates valid credit card numbers using the Luhn algorithm.
