@@ -7,7 +7,7 @@ The `SmartGenCC.py` script is designed to generate valid (Luhn-compliant) credit
 ## Features
 - Outputs Luhn-compliant CC numbers (15 or 16 digits).
 - Inputs a single BIN wildcard OR file with BIN wildcards.
-- Adjustable batch size per output CSV (default 100,000 CCs per CSV).
+- Adjustable batch size per output CSV (default is 100,000 CCs per CSV).
 
 ## Usage
 To run the script, use the following command format:
