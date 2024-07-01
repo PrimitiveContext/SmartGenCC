@@ -1,4 +1,4 @@
-cc_brand,cc_name,odds_of_collision,luhn_cc_space,active_global_users,bin_list
+cc_brand,cc_name,odds_of_collision,luhn_cc_space,est_active_global_users,bin_list
 American Express,American Express American Express Blue Cash Express Card,0.04,100000000,4000000,['372395*********']
 Visa,"VISA Bank of America, National Association Classic, Debit, Visa",0.025,1000000000,25000000,['449533**********']
 MasterCard,Mastercard Wells Fargo Bank,0.02,1000000000,20000000,['546616**********']
