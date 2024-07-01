@@ -2,14 +2,12 @@
 # SmartGenCC.py
 
 ## Overview
-The `SmartGenCC.py` script is designed to generate valid (Luhn-compliant) credit card numbers based on known BIN (Bank Identification Number) values. The script can process individual BINs or a list of BINs from a file and outputs the generated card numbers to CSV files.
+The `SmartGenCC.py` script is designed to generate valid (Luhn-compliant) credit card numbers based on BIN (Bank Identification Number) wildcard strings.
 
 ## Features
-- Generates valid credit card numbers using the Luhn algorithm.
-- Processes both single BIN values and lists of BIN values from text or CSV files.
-- Supports batch processing, with the ability to specify the number of card numbers per CSV file.
-- Displays progress using a progress bar.
-- Handles both 15-digit and 16-digit BIN values.
+- Outputs Luhn-compliant CC numbers (15 or 16 digits).
+- Inputs a single BIN wildcard OR file with BIN wildcards.
+- Adjustable batch size per output CSV (default 100,000 CCs per CSV).
 
 ## Usage
 To run the script, use the following command format:
